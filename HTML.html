@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS.css">
+    <!-- Include UIKit CSS -->
+    <link rel="stylesheet" href="css/uikit.min.css">
+    <title>BMI Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>BMI Calculator</h1>
+        <div>
+            <label for="weight">Weight (kg):</label>
+            <input type="number" id="weight" placeholder="Enter your weight">
+        </div>
+        <div>
+            <label for="height">Height (cm):</label>
+            <input type="number" id="height" placeholder="Enter your height">
+        </div>
+        <button class="uk-button uk-button-primary" onclick="calculateBMI()">Calculate BMI</button>
+        <div id="result" class="uk-margin-top"></div>
+        <!-- Add the BMI type icon div -->
+        <div id="bmi-icon" class="bmi-icon"></div>
+        <!-- Add the error message div -->
+        <div id="error-message" class="error-message"></div>
+    </div>
+
+    <!-- Include UIKit JavaScript -->
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+
+    <script src="JavaScript.js"></script>
+</body>
+</html>
